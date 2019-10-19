@@ -1,0 +1,16 @@
+[package]
+name = "numeric-lut"
+description = "A library for generating numeric lookup functions."
+version = "0.1.0"
+authors = ["David Flemström <david.flemstrom@gmail.com>"]
+license = "MIT"
+homepage = "https://github.com/dflemstr/numeric-lut"
+repository = "https://github.com/dflemstr/numeric-lut"
+edition = "2018"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = {version = "1.0.5", features = ["full"]} # we need "full" for syn::PatRange
+quote = "1.0.2"
